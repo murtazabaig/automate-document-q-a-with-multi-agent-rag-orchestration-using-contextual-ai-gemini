@@ -1,0 +1,45 @@
+{
+  "id": 11619,
+  "title": "Automate Document Q&A with Multi-Agent RAG Orchestration using Contextual AI & Gemini",
+  "slug": "automate-document-qa-with-multi-agent-rag-orchestration-using-contextual-ai-gemini-11619",
+  "description": "PROBLEMManaging multiple RAG AI agents can be complex when each has its own purpose andvector database. * Manually tracking agents and deciding which one to query wastes time. * LLMs often struggle to determine which agent best fits a user’s request.THIS WORKFLOW ENABLES AUTOMATED MULTI-AGENT ORCHESTRATION, DYNAMICALLY SELECTINGAND QUERYING THE CORRECT AGENT USING CONTEXTUAL AI QUERY TOOL AND GEMINI 2.5FLASH.HOW IT WORKS * A form trigger allows users to create new agents by specifying a name, description, datastore, and uploading files. * A new agent is created with the provided information and files are ingested in the datastore * We get the status of file ingestion every 30 seconds until the ingestion process is complete * When users send queries, the Agent Orchestrator identifies the most relevant agent to generate grounded, context-aware responses.Note: The document ingestion process is asynchronous and may take a few minutesbefore your agent has the document fully available in the datastore forquerying.HOW TO SET UP * Create a free Contextual AI account [https://app.contextual.ai/] and obtain your CONTEXTUALAI_API_KEY. * Add CONTEXTUALAI_API_KEY as an environment variable in n8n. * For the baseline model, we have used Gemini 2.5 Flash Model, you can find your Gemini API key here [https://ai.google.dev/gemini-api/docs/api-key]HOW TO CUSTOMIZE THE WORKFLOW * Replace the Form Trigger with a Webhook Trigger or manual input to integrate with custom systems. * Swap Gemini 2.5 Flash with another LLM provider * Update the wait time as per user requirement * Modify the system prompt to fine-tune how the orchestration logic selects and queries agents. * You can check out this Contextual AI API reference [https://docs.contextual.ai/api-reference/agents/create-agent] for more details on agent creation and usage. * If you have feedback or need support, please email [email protected] [/cdn-cgi/l/email-protection#ee888b8b8a8c8f8d85ae8d81809a8b969a9b8f82c08f87].",
+  "metadescription": "Effortlessly manage multiple RAG AI agents with automated selection, real-time updates, and easy customization. Boost productivity—learn more today!",
+  "summary": "Effortlessly manage and orchestrate multiple RAG AI agents, each with unique data sources and purposes.  \nUsers create new agents via a simple form, specifying details and uploading relevant files, with real-time feedback on ingestion status.  \nWhen queries are submitted, the system intelligently selects the most suitable agent using Contextual AI’s query tool and Gemini 2.5 Flash for precise, context-aware answers.  \nEasily customize triggers, models, ingestion timing, and orchestration logic to fit your workflow needs—all supported by robust integration guides and responsive support.",
+  "date": "9 Dec 2025",
+  "createdAtRaw": "2025-12-09T03:04:49.524+00:00",
+  "categories": [
+    "Internal Wiki",
+    "AI RAG"
+  ],
+  "nodeTypes": [
+    "n8n-nodes-base.if",
+    "n8n-nodes-base.code",
+    "n8n-nodes-base.wait",
+    "n8n-nodes-base.splitOut",
+    "n8n-nodes-base.stickyNote",
+    "n8n-nodes-base.formTrigger",
+    "n8n-nodes-base.splitInBatches",
+    "@n8n/n8n-nodes-langchain.agent",
+    "n8n-nodes-contextualai.contextualAi",
+    "@n8n/n8n-nodes-langchain.chatTrigger",
+    "n8n-nodes-contextualai.contextualAiTool",
+    "@n8n/n8n-nodes-langchain.lmChatGoogleGemini",
+    "@n8n/n8n-nodes-langchain.memoryBufferWindow"
+  ],
+  "author": {
+    "name": "Jinash Rouniyar",
+    "username": "jinash",
+    "avatar": "https://gravatar.com/avatar/58e4cbc4c832d80c8e9882a5c62bf1e2edf9a0d455f21d684b61ce1410b69298?r=pg&d=retro&size=200",
+    "verified": false
+  },
+  "popularity": 94,
+  "visitors": 211,
+  "inserters": 51,
+  "templateUrl": "https://n8n.io/workflows/11619",
+  "readme": "",
+  "thumbnail": "https://supabase.amastuces.com/storage/v1/object/public/worklowscreenshot/11619-automate-document-q-a-with-multi-agent-rag-orchestration-using-contextual-ai---gemini.webp",
+  "complexityLevel": "advanced",
+  "templateData": null,
+  "price": 0,
+  "referalUrl": null
+}
