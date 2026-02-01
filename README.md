@@ -22,7 +22,6 @@ Effortlessly manage multiple RAG AI agents with automated selection, real-time u
 
 ## Included Files
 - `workflow.json`
-- `metadata.json`
 
 ## Setup
 1. Import `workflow.json` into n8n.
@@ -49,6 +48,13 @@ Effortlessly manage multiple RAG AI agents with automated selection, real-time u
 ## Author
 
 Murtaza Baig
+
+## Screenshots
+
+![Screenshot](assets/5449-automate-sales-cold-calling-pipeline-with-apify--gpt-4o--and-whatsapp.webp)
+![Screenshot](assets/Screenshot_2025_06_29_at_15_43_00_b539ee8b6f.png)
+![Screenshot](assets/n8nworfklows.webp)
+![Screenshot](assets/thumbnail.webp)
 
 ## License
 MIT License. See `LICENSE`.
